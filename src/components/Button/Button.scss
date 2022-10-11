@@ -8,19 +8,34 @@
         display: block;
         width: 100%;
     }
-    &--purpe {
+    &--md {
         font-size: 18px;
         line-height: 1em;
         font-weight: bold;
         padding: 19px 20px;
+    }
+    &--sm {
+        font-size: 17px;
+        line-height: 1.059em;
+        padding: 9px 13px;
+        border-radius: 5px;
+    }
+    &--purpe {
         text-transform: uppercase;
         color: #ffffff;
         background-color: #746bde;
-        &:hover {
-            opacity: 0.8;
-        }
         &:focus {
             outline: 3px solid rgba(116,107,222, 0.7);
         }
+    }
+    &--gray {
+        color: #242424;
+        background-color: #f8f9fa;
+        &:focus {
+            outline: 3px solid rgba(0,0,0, 0.7);
+        }
+    }
+    &:hover {
+        opacity: 0.8;
     }
 }

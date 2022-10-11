@@ -3,5 +3,26 @@
     min-width: 360px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 20px; 
+    padding: 0 20px;
+}
+  
+.header {
+    background-color: #6a62d2;
+    padding: 11px 0;
+    &__text {
+        font-size: 17px;
+        line-height: 1.2em;
+        color: #ffffff;
+    }
+}
+
+.footer {
+    background-color: #333333;
+    &__copyright {
+        font-size: 17px;
+        color: #ffffff;
+        font-weight: bold;
+        line-height: 1.412em;
+        text-transform: uppercase;
+    }
 }

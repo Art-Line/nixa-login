@@ -1,0 +1,31 @@
+.user-page {
+    max-width: 580px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    align-items: center;
+    &__info {
+        font-size: 17px;
+        color: #3d3d3d;
+        a {
+            color: #3d3d3d;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__list {
+        border-left: 1px solid #adb5bd;
+        list-style: none;
+        padding: 0;
+        li {
+            font-size: 17px;
+            color: #3d3d3d;
+            padding: 13px 0;
+            &:not(:last-child) {
+                border-bottom: 1px solid #c8c8c8;
+            }
+        }
+    }
+}
