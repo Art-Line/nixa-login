@@ -29,3 +29,12 @@
         }
     }
 }
+
+@media (max-width: 575px) {
+    .user-page {
+        grid-template-columns: 1fr;
+        &__list {
+            border-left: none
+        }
+    }
+}

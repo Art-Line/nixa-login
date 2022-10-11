@@ -26,3 +26,9 @@
         text-transform: uppercase;
     }
 }
+
+@media (max-width: 575px) {
+    .header__text {
+        font-size: 14px;
+    }
+}

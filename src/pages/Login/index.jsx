@@ -22,7 +22,7 @@ function Login(props) {
 
     return (
         <div className="login-page d-flex px-3 py-5">
-            <main className="login-page__form-signin m-auto px-5 pt-5 pb-4">
+            <main className="login-page__form-signin w-100 m-auto p-4 px-sm-5 pt-sm-5 pb-sm-4">
                 <h1 className="text-center">Sign in to your account</h1>
                 <form onSubmit={loginForm}>
                     <div className="pb-3">
