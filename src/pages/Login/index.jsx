@@ -1,9 +1,12 @@
+import { useState } from "react";
 import Button from '../../components/Button';
 import Checkbox from '../../components/Checkbox';
 import Input from '../../components/Input';
 import './Login.scss'
 
 function Login(props) {
+
+    const [error, setError] = useState(false);
 
     const loginForm = (e) => {
         e.preventDefault();
@@ -12,7 +15,9 @@ function Login(props) {
             props.setUserInfo(userData);
             localStorage.setItem('user', JSON.stringify(userData));
             props.setIsLogin(true)
-        } 
+        } else {
+            setError(true);
+        }
     }
 
     return (
@@ -22,25 +27,29 @@ function Login(props) {
                 <form onSubmit={loginForm}>
                     <div className="pb-3">
                         <Input
+                            label="Enter your login"
+                            errorInput={error && "user not found"}
                             type="text"
                             name="login"
-                            className="default-input default-input--block"
+                            className={`default-input default-input--block ${error ? 'default-input--error' : ''}`}
+                            change={() => setError(false)}
                         />
                     </div>
                     <div className="pb-3">
                         <Input
+                            label="Enter password"
                             type="password"
                             name="password"
                             className="default-input default-input--block"
                         />
                     </div>
                     <div className="pb-4">
-                        <Checkbox 
+                        <Checkbox
                             text="Keep me signed in"
                         />
                     </div>
                     <div className="pb-4">
-                        <Button 
+                        <Button
                             type="submit"
                             className="btn btn--block btn--purpe btn--md"
                             text="Sign in"

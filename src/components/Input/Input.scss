@@ -7,7 +7,7 @@
     border-radius: 3px;
     padding: 19px 20px;
     transition-duration: 300ms;
-    transition-property: outline;
+    transition-property: outline, color, border-color;
     &:-webkit-autofill {
         -webkit-text-fill-color: #7f8593;
     }
@@ -18,5 +18,18 @@
         display: block;
         width: 100%;
     }
-    &-label {}
+    &-label {
+        position: relative;
+    }
+    &--error {
+        color: red;
+        border-color: red;
+    }
+    &-error-text {
+        position: absolute;
+        left: 8px;
+        top: 2px;
+        font-size: 10px;
+        color: red;
+    }
 }

@@ -1,10 +1,12 @@
 import './Input.scss';
 
 function Input(props) {
-    const {type, name, className} = props;
+    const {type, name, className, label, change, errorInput} = props;
     return (
-        <label className="input-label">
-            <input type={type} name={name} className={className} />
+        <label className="default-input-label">
+            {errorInput && <span className="default-input-error-text">{errorInput}</span>}
+            <span className="visually-hidden">{label}</span>
+            <input type={type} name={name} className={className} onChange={change} />
         </label>
     )
 }
