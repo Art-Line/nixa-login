@@ -1,0 +1,22 @@
+.default-input {
+    font-size: 14px;
+    line-height: 1em;
+    color: #7f8593;
+    background-color: #e5e8ed;
+    border: 1px solid #dee2e5;
+    border-radius: 3px;
+    padding: 19px 20px;
+    transition-duration: 300ms;
+    transition-property: outline;
+    &:-webkit-autofill {
+        -webkit-text-fill-color: #7f8593;
+    }
+    &:focus {
+        outline: 3px solid rgba(116,107,222, 0.7);
+    }
+    &--block {
+        display: block;
+        width: 100%;
+    }
+    &-label {}
+}

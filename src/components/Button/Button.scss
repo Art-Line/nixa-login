@@ -1,0 +1,26 @@
+.btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    transition-duration: 300ms;
+    transition-property: opacity, outline;
+    &--block {
+        display: block;
+        width: 100%;
+    }
+    &--purpe {
+        font-size: 18px;
+        line-height: 1em;
+        font-weight: bold;
+        padding: 19px 20px;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: #746bde;
+        &:hover {
+            opacity: 0.8;
+        }
+        &:focus {
+            outline: 3px solid rgba(116,107,222, 0.7);
+        }
+    }
+}

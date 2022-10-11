@@ -1,0 +1,30 @@
+.login-page {
+    background-color: #6a62d2;
+    min-height: 100%;
+    min-width: 360px;
+    &__form-signin {
+        max-width: 423px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #333333;
+        padding-bottom: 32px;
+    }
+    &__forgot-password {
+        font-size: 13px;
+        line-height: 1em;
+        color: #7f8593;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+        &:focus {
+            outline: none;
+            text-decoration: underline;
+        }
+    }
+}
